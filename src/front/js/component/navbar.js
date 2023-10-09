@@ -1,19 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/home.css";
+
+const PNG_FILE_URL = "/workspaces/johana-cv/src/front/img/cv-johana.png";
+
 
 export const Navbar = () => {
-	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-				</Link>
-				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
-					</Link>
-				</div>
-			</div>
-		</nav>
-	);
-};
+    
+    return (
+        <div className="navbar">
+            <div className="navbar-brand">
+                <Link to="/" className="logo" style={{ "--i": 1 }}>
+                    Portfolio
+                </Link>
+
+                <Link to="/about" className="navbar-link" style={{ "--i": 2 }}>
+                    About
+                </Link>
+
+                <Link to="/skills" className="navbar-link" style={{ "--i": 3 }}>
+                    Skills
+                </Link>
+
+                <Link to="/portfolio" className="navbar-link" style={{ "--i": 4 }}>
+                    Portfolio
+                </Link>
+
+                <Link to="/contact" className="navbar-link" style={{ "--i": 5 }}>
+                    Contact
+                </Link>
+            </div>
+          </div>
+    
+    );
+}

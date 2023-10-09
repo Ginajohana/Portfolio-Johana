@@ -1,7 +1,285 @@
-/*
-    home.css: This website contains selectors only used in home.css
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+body {
+    color: #ededed;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex; 
+    align-items: center; 
+    background: black;
+    padding: 20px 30px;
+    
+}
+.logo{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(100%); 
+    animation: slideFromLeft 1s ease forwards;
+    margin: 0 15px;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    color: #0ef;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+.navbar-link {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(100%); 
+    animation: slideFromLeft 1s ease forwards;
+    margin: 0 15px;
+    transition: 0.5s ease;
+}
+
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideFromLeft 1s ease forwards;
+    animation-delay: 0.5s; 
+    margin: 0 15px;
+    transition: 0.5s ease;
+}
+
+
+
+img{
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #0ef;
+    border-radius: 50px;
+    width: 300px;
+    height: 500px; 
+    opacity: -1;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.4s * var(--i));
+}
+
+img:hover{
+background: #0ef;
+color: #081b29;
+
+}
+
+.Home {
+   
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.Home-content{
+    max-width: 600px;
+}
+.Home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.Home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+
+
+}
+.Home-content h3 span{
+    color: #0ef;
+}
+.Home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.Home-content p {
+    font-size: 20px;
+    font-weight: 700;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0; 
+}
+
+.home-sci a {
+    display: inline-flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(100%); 
+    animation: slideFromLeft 1s ease forwards;
+    margin: 0 15px;
+    transition: 0.5s ease;
+}
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 10px #0ef;
+}
+.btn-box{
+    margin-top: 4%;
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.btn-box:hover {
+    color:black;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan,
+     0 0 50px cyan, 0 0 100px cyan, 
+     0 0 200px cyan !important;
+}
+
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px); 
+        opacity: 1; 
+    }
+}
+@keyframes slideTop{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.home-sci a:nth-child(1) {
+    animation-delay: 0.2s; 
+}
+
+.home-sci a:nth-child(2) {
+    animation-delay: 0.4s; 
+}
+
+.home-sci a:nth-child(3) {
+    animation-delay: 0.6s; 
+}
+
+.home-sci a:nth-child(4) {
+    animation-delay: 0.8s; 
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+}
+
+
+
