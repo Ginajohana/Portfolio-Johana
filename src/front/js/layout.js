@@ -13,6 +13,7 @@ import { About } from "./pages/about";
 import { Skills } from "./pages/skills";
 import { Portfolio } from "./pages/portfolio";
 
+
 //create your first component
 const Layout = () => {
     //the basename is used when your project is published in a subdirectory and not in the root of the domain

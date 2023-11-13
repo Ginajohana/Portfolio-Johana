@@ -1,7 +1,7 @@
-/* Reset and global styles */
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 3px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -14,9 +14,7 @@ body {
 .navbar {
     display: flex; 
     align-items: center; 
-    background: black;
-    padding: 20px 30px;
-    
+  
 }
 .logo{
     display: inline-block;
@@ -63,6 +61,9 @@ body {
     margin: 0 15px;
     transition: 0.5s ease;
 }
+.navbar-link:hover{
+    color: #0ef;
+}
 
 
 .home-sci a {
@@ -85,24 +86,37 @@ body {
     transition: 0.5s ease;
 }
 
+.image-container {
+    max-width: 55%;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  
+  .responsive-image {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
 
-
-img{
-    padding: 10px 10px 10px 10px;
-    border: 2px solid #0ef;
+img {
+    padding-right: 100px;
     border-radius: 50px;
     width: 300px;
     height: 500px; 
     opacity: -1;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.4s * var(--i));
+    background: transparent;
+    padding: 50px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 2px 2px 25px #4bafbdf7, 1px 1px 40px #4ef7e9f7;
 }
 
-img:hover{
-background: #0ef;
-color: #081b29;
 
-}
 
 .Home {
    
@@ -117,7 +131,8 @@ color: #081b29;
     padding: 70px 10% 0;
 }
 .Home-content{
-    max-width: 600px;
+    
+    max-width: 1000px;
 }
 .Home-content h3{
     font-size: 32px;
@@ -282,4 +297,50 @@ color: #081b29;
 }
 
 
-
+.email-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideFromLeft 1s ease forwards;
+    margin: 0 15px;
+    transition: 0.5s ease;
+  }
+  
+  .email-icon:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 10px #0ef;
+  }
+  
+  /* Estilos para el botón de cerrar */
+  button {
+    display: inline-block;
+    border: none;
+    padding: 5px 10px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 10px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  }
+  
+  button:hover {
+    color: black;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan !important;
+  }

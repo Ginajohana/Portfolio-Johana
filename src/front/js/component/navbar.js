@@ -23,11 +23,7 @@ export const Navbar = () => {
                 </Link>
 
                 <Link to="/portfolio" className="navbar-link" style={{ "--i": 4 }}>
-                    Portfolio
-                </Link>
-
-                <Link to="/contact" className="navbar-link" style={{ "--i": 5 }}>
-                    Contact
+                    Project
                 </Link>
             </div>
           </div>

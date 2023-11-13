@@ -1,118 +1,110 @@
-body  {
-  background-image: url('https://ak.picdn.net/shutterstock/videos/1091269445/thumb/1.jpg');
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-attachment: fixed; /* Fija la imagen en su posición, evitando el desplazamiento con el contenido */
-  /* Agrega otros estilos o propiedades según sea necesario */
-  /* background-color: rgb(62, 75, 73); */ /* Si deseas un color de fondo de respaldo */
-}
-  
-  section {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  span{
-    color: #0ef;
-   
-  }
-  h1{
-    text-align: center;
-    font-size: 50px;
-   
-  }
- 
-  
-  
-  .container1 {
-    width: 400px;
-    height: 500px;
-    padding: 40px 30px;
-    margin-left: 30px;
-  }
-  
-  .heading1 {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-top: 60px;
-  }
-  
-  .bar {
-   
-    justify-content:center;
-    width: calc(50% - 20px);
-    margin: 10px; 
-  }
-  
-  .progress-container {
-    width: 100%;
-    height: 5px; 
-    background-color: black;
-    border-radius: 10px;
-    justify-content: center;
-   
-  }
-  
-  
-  .progress-line-blue {
-    position: absolute;
-    height: 100%;
-    background-color: #0ef; 
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-    transform-origin: left;
-  }
-  .Technical-bars .bar {
-    justify-content: center;
-  }
-  .Technical-bars .bar {
-    margin-top: 30px;
-    justify-content: center;
-    flex-direction: column;
-    margin: 40px 0;
-    padding-left: 5%;
+body {
+  background-image: url('https://wallpaperaccess.com/full/3046059.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
 }
 
-  .bar .info {
-    font-size: 23px;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  
-  .progress-line {
-    width: 100%;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: relative;
-  }
-  
-  .progress-line span {
-    position: absolute;
-    height: 100%;
-    background-color: #0ef;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-    transform-origin: left;
-  }
-  
-  @keyframes animate {
-    100% {
-      transform: scaleX(1);
-    }
-  }
-  
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.Technical-bars .bar .progress-line span{
+span {
+  color: #0ef;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container1 {
+  width: 400px;
+  height: 500px;
+  padding: 40px 30px;
+  margin-left: 30px;
+}
+
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-top: 60px;
+}
+
+.bar {
+  justify-content: center;
+  width: calc(50% - 20px);
+  margin: 10px; 
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px; 
+  background-color: black;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.progress-line-blue {
+  position: absolute;
+  height: 100%;
+  background-color: #0ef; 
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform-origin: left;
+}
+
+.Technical-bars .bar {
+  justify-content: center;
+  margin-top: 30px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+  padding-left: 5%;
+}
+
+.bar .info {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.progress-line {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-line span {
+  position: absolute;
+  height: 100%;
+  background-color: #0ef;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.Technical-bars .bar .progress-line span {
   height: 100%;
   background-color: #0ef;
   position: absolute;
   border-radius: 10px;
-  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
 }
+
 .skills-container {
   display: flex;
   justify-content: space-between;
@@ -123,23 +115,27 @@ body  {
   width: calc(50% - 10px); 
   margin-right: 10px;
 }
-.svg{
+
+.svg {
   font-size: 300px 300px;
 }
-.radial-bars{
+
+.radial-bars {
   width: 100px;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-evenly;
- align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-.radial-bars .radial-bar{
+
+.radial-bars .radial-bar {
   width: 50%;
   height: 170%;
   margin-bottom: 10px;
   position: relative;
 }
-.radial-bars .radial-bar svg{
+
+.radial-bars .radial-bar svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -147,6 +143,7 @@ body  {
   width: 120px;
   height: 160px;
 }
+
 .progress-bar {
   stroke-width: 10;
   stroke: #000;
@@ -157,32 +154,24 @@ body  {
   transition: stroke-dashoffset 1s ease-in-out;
 }
 
-/* Estilo para el círculo de relleno animado */
 .path {
   height: 100%;
   background-color: #0ef;
- 
-  
-}
-.path {
   stroke: #0ef;
   fill: transparent;
   stroke-linecap: round;
   transition: stroke-dashoffset 1s ease-in-out;
 }
 
-/* Estilo para el texto del porcentaje */
 .percentage-text {
   font-size: 24px;
-  fill: #000; /* Color del texto */
+  fill: #000;
 }
 
-/* Clase de animación para el círculo */
 .fill-animation {
-  stroke-dashoffset: 0; /* Rellena el círculo completamente */
+  stroke-dashoffset: 0;
 }
 
-/* Estilo para el texto del porcentaje */
 .porcentage {
   position: absolute;
   top: 50%;
@@ -193,18 +182,12 @@ body  {
   opacity: 0;
   transition: opacity 0.5s 1s linear;
 }
+.fa-html5, .fa-css3, .fa-js, .fa-python, .fa-react,
+.fa-tasks, .fa-comments {
+  font-size: 10em; 
+}
 
-/* Estilo para el texto de la habilidad */
-.text {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  bottom: -5px;
-  transform: translateX(-50px);
-  font-size: 17px;
-  font-weight: 500;
-  opacity: 0;
-  transition: opacity 0.5s 1s linear;
+.fa-tasks{
+  font-size: 10em;
 }
 
